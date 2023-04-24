@@ -19,11 +19,11 @@ const Feed = () => {
   //
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await axios.get(`http://localhost:8080/posts/${query}`);
+      const response = await axios.get(`https://springboothireapp-production.up.railway.app/getPosts/${query}`);
       setPost(response.data);
     };
     const fetchInitialPosts = async () => {
-        const response = await axios.get(`http://localhost:8080/allPosts`);
+        const response = await axios.get(`https://springboothireapp-production.up.railway.app/getPosts`);
         console.log(response);
         setPost(response.data);
     }

@@ -32,7 +32,7 @@ const Create = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8080/post", {
+    fetch("https://springboothireapp-production.up.railway.app/addPost", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
